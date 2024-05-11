@@ -13,6 +13,7 @@ body * {
 
 body {
 	background-color: #142F4C;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,7 @@ body {
   padding: 20px;
   font-family: arial;
   max-width: 650px;
+  margin-bottom: 20px;
 }
 
 #goal {
@@ -101,4 +103,17 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 2px;
+}
+
+input{
+    border-radius: 5px;
+    border: solid 2px #FFF;
+    color: #FFF;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+    color: #142F4C;
+}
+
+#input{
+  display: none;
 }
