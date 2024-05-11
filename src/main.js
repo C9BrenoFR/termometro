@@ -24,7 +24,7 @@ function mudar(mudanca){
     pontos = 10000 * (porcento / 100);
     
     document.getElementById('porcento').textContent = porcento;
-    document.getElementById('pontos').textContent = pontos;
+    document.getElementById('pontos').textContent = pontos + " Pontos";
     document.getElementById('progress').style.width = `${porcento}%`;
     cor(porcento);
 }
