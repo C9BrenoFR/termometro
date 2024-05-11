@@ -36,7 +36,7 @@ function mudar(mudanca){
 
 function negociar(valor){
     tentativa++;
-    if (tentativa >= 5) return alert(`O cliente desistiu de negociar com você!`);
+    if (tentativa >= 3) return alert(`O cliente desistiu de negociar com você!`);
     let porcento = getValor('porcento');
     let bonus = getBonus(porcento);
 
