@@ -21,7 +21,8 @@ function mudar(mudanca){
     if (porcento < 0) porcento = 0;
     if (porcento > 100) porcento = 100;
 
-    if (porcento == 100) audio();
+    if (porcento == 100) vitoria();
+    if (porcento == 0) derrota();
     
     pontos = 10000 * (porcento / 100);
     
@@ -31,6 +32,10 @@ function mudar(mudanca){
     cor(porcento);
 }
 
-function audio(){
-    document.getElementById('audio').play();
+function vitoria(){
+    document.getElementById('vitoria').play();
+}
+
+function derrota(){
+    document.getElementById('derrota').play();
 }
