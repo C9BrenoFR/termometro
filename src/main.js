@@ -20,6 +20,8 @@ function mudar(mudanca){
 
     if (porcento < 0) porcento = 0;
     if (porcento > 100) porcento = 100;
+
+    if (porcento == 100) audio();
     
     pontos = 10000 * (porcento / 100);
     
@@ -27,4 +29,8 @@ function mudar(mudanca){
     document.getElementById('pontos').textContent = pontos + " Pontos";
     document.getElementById('progress').style.width = `${porcento}%`;
     cor(porcento);
+}
+
+function audio(){
+    document.getElementById('audio').play();
 }
