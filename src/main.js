@@ -84,11 +84,11 @@ function getBonus(porcento){
         case (porcento >= 60 && porcento < 70):
           return 7;
         case (porcento >= 70 && porcento < 80):
-          return 8;
+          return 14;
         case (porcento >= 80 && porcento < 90):
-          return 9;
+          return 15;
         case (porcento >= 90 && porcento <= 100):
-          return 10;
+          return 20;
         default:
           return -100;
       }
